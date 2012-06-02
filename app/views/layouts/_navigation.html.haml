@@ -1,0 +1,21 @@
+= link_to "Fael", root_path, :class => 'brand'
+%ul.nav
+  - if user_signed_in?
+    %li
+      = link_to t(:invoices), edit_user_registration_path
+    %li
+      = link_to t(:customers), edit_user_registration_path
+    %li
+      = link_to t(:my_account), edit_user_registration_path
+    %li
+      = link_to t(:logout), destroy_user_session_path, :method=>'delete'
+  - else
+    %li
+      = link_to t(:login), new_user_session_path
+  - if user_signed_in?
+    - if current_user.has_role? :admin
+      %li
+        = link_to t(:admin), users_path
+  - else
+    %li
+      = link_to t(:sign_up), new_user_registration_path

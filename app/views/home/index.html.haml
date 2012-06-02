@@ -1,0 +1,3 @@
+%h3 #{t(:home)}
+- @users.each do |user|
+  %p #{t(:user)}: #{link_to user.name, user}

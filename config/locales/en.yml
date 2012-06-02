@@ -1,0 +1,23 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  hello: "Hello world"
+  home: "Home"
+  login: "Login"
+  signin: "Sign In"
+  logout: "Logout"
+  signout: "Sign Out"
+  signup: "Sign Up"
+  save: "Save"
+  edit: "Edit"
+  update: "Update"
+  create: "Create"
+  back: "Back"
+  admin: "Admin"
+  my_account: "My Account"
+  invoices: "Invoices"
+  customers: "Customers"
+  user: "User"
+  email: "Email"
+  tax_entity_info: "Tax Entity Information"
