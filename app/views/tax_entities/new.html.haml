@@ -1,1 +1,7 @@
 %h2 #{ t(:create) } #{ t(:tax_entity_info) }
+
+= semantic_form_for( [@user, @tax_entity] ) do |f| 
+  = f.input :name, :label => t(:tax_entity_name) 
+  = f.input :tax_id, :label => t(:tax_entity_id_name) 
+  = f.actions do
+    = f.action :submit, :as => :button, :label => t(:create)

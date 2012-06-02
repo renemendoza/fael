@@ -17,7 +17,7 @@ end
 When /^I create a Tax Entity$/ do
   set_tax_entity_data
   visit "/users/#{@user.id}/tax_entities/new"
-  fill_in "Name", :with => @sample_tax_entity[:name]
+  fill_in "Legal Name", :with => @sample_tax_entity[:name]
   fill_in "Tax ID", :with => @sample_tax_entity[:tax_id]
   click_button "Create"
 end

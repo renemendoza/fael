@@ -2,8 +2,8 @@
 
 FactoryGirl.define do
   factory :tax_entity do
-    name "MyString"
-    tax_id "MyString"
+    name "Crazy Widgets LLC"
+    tax_id "CWL123456"
     entity_type "MyString"
     user_id 1
   end

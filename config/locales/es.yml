@@ -8,6 +8,7 @@ es:
   save: "Guardar"
   signup: "Registro"
   create: "Crear"
+  successfully_created: "Ha sido creada exitosamente"
   edit: "Editar"
   update: "Guardar cambios"
   back: "Regresar"
@@ -17,4 +18,7 @@ es:
   customers: "Clientes"
   user: "Usuario"
   email: "Correo Electronico"
-  tax_entity_info: "Informationes Fiscales"
+  tax_entity_info: "Informacion Fiscal"
+  tax_entity_name: "Razon Social"
+  tax_entity_id_name: "R.F.C."
+  

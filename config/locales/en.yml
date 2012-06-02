@@ -13,6 +13,7 @@ en:
   edit: "Edit"
   update: "Update"
   create: "Create"
+  successfully_created: "Has been successfully_created"
   back: "Back"
   admin: "Admin"
   my_account: "My Account"
@@ -21,3 +22,5 @@ en:
   user: "User"
   email: "Email"
   tax_entity_info: "Tax Entity Information"
+  tax_entity_name: "Legal Name"
+  tax_entity_id_name: "Tax ID"
