@@ -5,6 +5,5 @@ FactoryGirl.define do
     name "Crazy Widgets LLC"
     tax_id "CWL123456"
     entity_type "MyString"
-    user_id 1
   end
 end

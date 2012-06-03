@@ -17,7 +17,7 @@ describe TaxEntitiesController do
   describe "POST 'create'" do
 
     before(:each) do
-      @tax_entity = @user.build_tax_entity
+      @tax_entity = @user.build_tax_entity( FactoryGirl.attributes_for(:tax_entity) )
       TaxEntity.stub(:new).and_return(@tax_entity)
     end
 

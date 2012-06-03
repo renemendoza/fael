@@ -10,9 +10,9 @@ class TaxEntitiesController < ApplicationController
   end
 
   def create
-    #@user = User.find(params[:user_id])
-    @tax_entity = TaxEntity.new(params[:tax_entity])
+    @user = current_user
+    @tax_entity = @user.build_tax_entity(params[:tax_entity])
     flash[:notice] = "#{t(:tax_entity_info)} (#{@tax_entity.name}) #{t(:successfully_created)}" if @tax_entity.save
-    respond_with(@tax_entity.user)
+    respond_with(@user)
   end
 end

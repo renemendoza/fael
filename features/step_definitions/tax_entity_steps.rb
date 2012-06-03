@@ -23,8 +23,7 @@ When /^I create a Tax Entity$/ do
 end
 
 Then /^I should have one Tax Entity$/ do
-  @user.tax_entity.should be(1)
-  #pending # express the regexp above with the code you wish you had
+  @user.tax_entity.should_not be_nil
 end
 
 Then /^I should be able to create Invoices$/ do
