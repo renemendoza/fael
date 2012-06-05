@@ -5,5 +5,6 @@ FactoryGirl.define do
     name "Crazy Widgets LLC"
     tax_id "CWL123456"
     entity_type "MyString"
+    association :address, :strategy => :build
   end
 end

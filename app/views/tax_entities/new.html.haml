@@ -1,7 +1,16 @@
 %h2 #{ t(:create) } #{ t(:tax_entity_info) }
 
-= semantic_form_for( [@user, @tax_entity] ) do |f| 
-  = f.input :name, :label => t(:tax_entity_name) 
-  = f.input :tax_id, :label => t(:tax_entity_id_name) 
+= semantic_form_for( [@user, setup_address(@tax_entity)] ) do |f|
+  = f.input :name,      :label => t(:tax_entity_name)
+  = f.input :tax_id,    :label => t(:tax_entity_id_name)
+  = f.semantic_fields_for :address do |addr|
+    = addr.input :calle,          :label => t(:address_street)
+    = addr.input :numero_ext,     :label => t(:address_external_number)
+    = addr.input :numero_int,     :label => t(:address_internal_number)
+    = addr.input :colonia,        :label => t(:address_colonia)
+    = addr.input :municipio,      :label => t(:address_municipio)
+    = addr.input :estado,         :label => t(:address_state)
+    = addr.input :pais,           :label => t(:address_country)
+    = addr.input :codigo_postal,  :label => t(:address_postal_code)
   = f.actions do
     = f.action :submit, :as => :button, :label => t(:create)

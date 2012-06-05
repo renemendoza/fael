@@ -21,4 +21,11 @@ es:
   tax_entity_info: "Informacion Fiscal"
   tax_entity_name: "Razon Social"
   tax_entity_id_name: "R.F.C."
-  
+  address_street: "Calle"
+  address_external_number: "Numero Ext"
+  address_internal_number: "Numero Int"
+  address_colonia: "Colonia"
+  address_municipio: "Municipio"
+  address_state: "Estado"
+  address_country: "Pais"
+  address_postal_code: "Codigo Postal"
