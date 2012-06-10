@@ -6,6 +6,7 @@ Fael::Application.routes.draw do
   devise_for :users
   resources :users, :only => [:show, :index] do
     resources :tax_entities
+    resources :customers, :controller => "tax_entities", :type => "Customer"
   end
 
 
