@@ -8,4 +8,3 @@ Feature: Users should be able to create a Tax Entity
   Given I am logged in
   When I create a Tax Entity
   Then I should have one Tax Entity
-  And I should be able to create Invoices

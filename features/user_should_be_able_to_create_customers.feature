@@ -7,4 +7,3 @@ Feature: User should be able to create customers
   Given I am logged in
   When I create a Customer
   Then I should have one Customer
-  And I should be able to create Invoices
