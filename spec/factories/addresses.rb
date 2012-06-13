@@ -2,13 +2,11 @@
 
 FactoryGirl.define do
   factory :address do
-    calle "Coahuila"
-    numero_ext "122"
-    numero_int "L301"
-    colonia "Roma Sur"
-    municipio "Cuauhtemoc"
-    estado "Distrito Federal"
-    pais "Mexico"
-    codigo_postal "06760"
+    street_address "Coahuila 122 L301"
+    street_address_2 "Colonia Roma Sur"
+    city "Cuauhtemoc"
+    state "Distrito Federal"
+    country "Mexico"
+    postal_code "06760"
   end
 end
