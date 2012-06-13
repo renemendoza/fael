@@ -13,4 +13,12 @@ class User < ActiveRecord::Base
   #has_one :vendor, :dependent => :destroy
   has_many :customers, :dependent => :destroy
 
+
+  def can_create_invoices?
+    return false unless customers.any? {|c| c.valid? }
+    return false unless tax_entity.valid?
+    #check if we have valid digital certificates and stuff
+    return true
+  end
+
 end
