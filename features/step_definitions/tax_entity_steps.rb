@@ -15,11 +15,15 @@ def fill_in_tax_entity_data
 end
 
 
-When /^I create a Tax Entity$/ do
+def create_tax_entity
   visit "/users/#{@user.id}/tax_entities/new"
   set_tax_entity_data
   fill_in_tax_entity_data
   click_button "Create"
+end
+
+When /^I create a Tax Entity$/ do
+  create_tax_entity
 end
 
 Then /^I should have one Tax Entity$/ do
