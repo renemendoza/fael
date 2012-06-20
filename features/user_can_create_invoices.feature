@@ -1,10 +1,10 @@
 @http://www.pivotaltracker.com/story/show/30971017
 Feature: User can create invoices
   As a logged in user
-  I want to be able to create a Customer
-  So that I can issue an invoice for her
-  Scenario: User successfully creates a Customer
+  I want to be able to create an Invoice for a Customer
+  So that I can get paid on time
+  Scenario: User successfully creates an Invoice
   Given I am logged in
-  When I create a Tax Entity
-  And I create a Customer
-  Then i should be able to create an Invoice
+  And I can create invoices
+  When I create an Invoice
+  Then the invoice should be valid
