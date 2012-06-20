@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
   has_one :tax_entity, :dependent => :destroy
   #has_one :vendor, :dependent => :destroy
   has_many :customers, :dependent => :destroy
-
+  has_many :invoices, :through => :tax_entity
 
   def can_create_invoices?
     raise Exceptions::UserHasNoCustomers unless customers.any? {|c| c.valid? }
