@@ -7,6 +7,7 @@ Fael::Application.routes.draw do
   resources :users, :only => [:show, :index] do
     resources :tax_entities
     resources :customers, :controller => "tax_entities", :type => "Customer"
+    resources :invoices
   end
 
 
