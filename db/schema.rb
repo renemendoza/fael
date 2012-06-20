@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120613021959) do
+ActiveRecord::Schema.define(:version => 20120614003054) do
 
   create_table "addresses", :force => true do |t|
     t.integer  "tax_entity_id"
@@ -23,6 +23,18 @@ ActiveRecord::Schema.define(:version => 20120613021959) do
     t.string   "state"
     t.string   "country"
     t.string   "postal_code"
+  end
+
+  create_table "invoices", :force => true do |t|
+    t.integer  "vendor_id"
+    t.integer  "customer_id"
+    t.datetime "date_issued"
+    t.string   "currency"
+    t.string   "notes"
+    t.decimal  "pretax_total"
+    t.decimal  "total"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
   end
 
   create_table "roles", :force => true do |t|
