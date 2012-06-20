@@ -17,7 +17,6 @@ en:
   back: "Back"
   admin: "Admin"
   my_account: "My Account"
-  invoices: "Invoices"
   customers: "Customers"
   user: "User"
   email: "Email"
@@ -30,3 +29,5 @@ en:
   address_state: "State"
   address_country: "Country"
   address_postal_code: "Postal Code"
+  invoices: "Invoices"
+  invoice_total: "Total"

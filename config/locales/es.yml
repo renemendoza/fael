@@ -14,7 +14,6 @@ es:
   back: "Regresar"
   admin: "Admin"
   my_account: "Mi Cuenta"
-  invoices: "Facturas"
   customers: "Clientes"
   user: "Usuario"
   email: "Correo Electronico"
@@ -27,3 +26,5 @@ es:
   address_state: "Estado"
   address_country: "Pais"
   address_postal_code: "Codigo Postal"
+  invoices: "Facturas"
+  invoice_total: "Total"

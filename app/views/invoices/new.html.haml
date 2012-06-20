@@ -1,0 +1,5 @@
+%h2 #{ t(:create) } #{ t(:invoices) }
+= semantic_form_for( [@user, @invoice] ) do |f|
+  = f.input :total,      :label => t(:total)
+  = f.actions do
+    = f.action :submit, :as => :button, :label => t(:create)
